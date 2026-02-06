@@ -59,7 +59,7 @@ button {
 <script>
 function yes() {
   document.querySelector(".container").innerHTML =
-    "<h1>YEEEEES ❤️🥰</h1><p>je t'aime mon bb</p>";
+    "<h1>YEEEEES ❤️🥰</h1><p>je t'aime mon ange rendez vous le 13 j'aurais une petite surprise pour toi</p>";
 }
 
 function moveNo() {
