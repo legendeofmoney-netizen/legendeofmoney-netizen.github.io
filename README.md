@@ -1,66 +1,45 @@
+<!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Ma Valentine 💘</title>
+<title>Pour toi ❤️</title>
+
 <style>
-  body {
-    background: #ffe6f0;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin-top: 100px;
-  }
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  font-family: Arial, sans-serif;
+}
 
-  h1 {
-    color: #ff2e63;
-  }
+.container {
+  text-align: center;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
 
-  .btn {
-    padding: 15px 25px;
-    font-size: 18px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    margin: 20px;
-    position: relative;
-  }
+h1 {
+  font-size: 40px;
+  color: #ff4d6d;
+}
 
-  #yesBtn {
-    background-color: #ff2e63;
-    color: white;
-  }
-
-  #noBtn {
-    background-color: #999;
-    color: white;
-    position: absolute;
-  }
+p {
+  font-size: 20px;
+}
 </style>
-</head>
 
+</head>
 <body>
 
-<h1>Veux-tu être ma Valentine ? 💕</h1>
-
-<button id="yesBtn" class="btn" onclick="yes()">Oui 💖</button>
-<button id="noBtn" class="btn">Non 😈</button>
-
-<script>
-function yes() {
-  document.body.innerHTML = "<h1>YEEEEES 💘🥰</h1><p>je t'aime mon bb</p>";
-}
-
-const noBtn = document.getElementById("noBtn");
-
-noBtn.addEventListener("mouseover", moveButton);
-noBtn.addEventListener("click", moveButton);
-
-function moveButton() {
-  const x = Math.random() * (window.innerWidth - 100);
-  const y = Math.random() * (window.innerHeight - 50);
-  noBtn.style.left = x + "px";
-  noBtn.style.top = y + "px";
-}
-</script>
+<div class="container">
+  <h1>YEEEEES ❤️🥰</h1>
+  <p>je t'aime mon bb</p>
+</div>
 
 </body>
 </html>
