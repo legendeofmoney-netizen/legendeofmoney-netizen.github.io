@@ -24,22 +24,52 @@ body {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 32px;
   color: #ff4d6d;
 }
 
-p {
-  font-size: 20px;
+button {
+  padding: 15px 25px;
+  font-size: 18px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#yes {
+  background-color: #ff4d6d;
+  color: white;
+}
+
+#no {
+  background-color: #ccc;
 }
 </style>
-
 </head>
+
 <body>
 
 <div class="container">
-  <h1>YEEEEES ❤️🥰</h1>
-  <p>je t'aime mon bb</p>
+  <h1>Veux-tu être ma Valentine ? 💌</h1>
+  <button id="yes" onclick="yes()">Oui ❤️</button>
+  <button id="no" onmouseover="moveNo()">Non 😏</button>
 </div>
+
+<script>
+function yes() {
+  document.querySelector(".container").innerHTML =
+    "<h1>YEEEEES ❤️🥰</h1><p>je t'aime mon bb</p>";
+}
+
+function moveNo() {
+  const btn = document.getElementById("no");
+  btn.style.position = "absolute";
+  btn.style.top = Math.random() * 80 + "%";
+  btn.style.left = Math.random() * 80 + "%";
+}
+</script>
 
 </body>
 </html>
